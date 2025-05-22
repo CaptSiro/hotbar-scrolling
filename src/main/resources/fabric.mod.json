@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"id": "hotbarscroll",
+	"version": "0.1.0",
+	"name": "Hotbar Scroll",
+	"description": "Adds configurable key bindings for hot bar scroll left/right",
 	"authors": [
-		"Me!"
+		"CaptSiro"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -15,11 +15,8 @@
 	"icon": "assets/modid/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.captsiro.hotbarscroll.HotBarScrollClient"
 		]
 	},
 	"mixins": [
@@ -31,7 +28,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.21.5",
+		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
